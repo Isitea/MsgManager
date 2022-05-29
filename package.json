@@ -1,0 +1,38 @@
+{
+  "name": "msgmanager",
+  "version": "0.0.1",
+  "description": "Manage message(msg) files with DB similar to the pst file.",
+  "main": "main.js",
+  "scripts": {
+    "compile": "tsc && copyfiles -e application/**/*.ts -u 1 application/**/* devBuild",
+    "watch": "npm compile && tsc --watch",
+    "start": "electron devBuild/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isitea/MsgManager.git"
+  },
+  "keywords": [
+    "msg",
+    "ForerunnerDB",
+    "ElectronJS"
+  ],
+  "author": "Isitea <isitea@isitea.net> (http://isitea.net/)",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Isitea/MsgManager/issues"
+  },
+  "homepage": "https://github.com/Isitea/MsgManager#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "copyfiles": "^2.4.1",
+    "electron": "^19.0.1",
+    "eslint": "^8.16.0",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "@kenjiuno/msgreader": "^1.15.0-alpha.1",
+    "forerunnerdb": "^2.0.22"
+  }
+}
